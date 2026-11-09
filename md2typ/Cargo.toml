@@ -1,0 +1,18 @@
+[package]
+name = "md2typ"
+version = "0.1.0"
+edition = "2021"
+description = "Convert scenario-flavoured Markdown into Typst for the scenario-forge template"
+license = "MIT"
+
+[[bin]]
+name = "md2typ"
+path = "src/main.rs"
+
+# No dependencies on purpose: the Markdown dialect is small and fully
+# specified in DIALECT.md, and a hand-written parser is easier to extend
+# with new block types than a general CommonMark parser is to bend.
+[dependencies]
+
+[profile.release]
+opt-level = 2

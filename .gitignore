@@ -1,0 +1,10 @@
+# Build output
+build/
+md2typ/target/
+
+# macOS
+.DS_Store
+
+# Private markdown
+scenarios/private/
+*.pdf
